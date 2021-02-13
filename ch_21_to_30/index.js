@@ -1,11 +1,13 @@
-var City = prompt("Enter city name : ");
-City = City.toUpperCase();
+var number = prompt("Please inut your number in decimal like 3.5 :");
+var round = Math.ceil(number);
+var text = 'This is my dummy text';
+var sliceText = text.slice(0,number);
+console.log("its"+ sliceText);
+let newString;
 
-var cleanestCity = ['lahore','islamabad','karachi'];
-
-for (let i = 0; i < cleanestCity.length; i++) {
-    if (City === cleanestCity[i].toUpperCase()) {
-        alert("You are Right");
-    }
-    
+for(var i = sliceText.length - 1 ; i >= 0  ; i--){  
+     
+     newString = newString + sliceText.charAt(i);
+     console.log(newString);
 }
+alert(newString);
